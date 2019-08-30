@@ -2,10 +2,24 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 
-$('#button').on('click',function(){
-    setTimeout(function(){
-        window.location="form.html";
-    },1000)
+    $('#button').on('click',function(){
+        setTimeout(function(){
+            window.location="form.html";
+        },1000);
+    });
+    var okToSubmit = false;
+    $('form').submit(function (e) {
+        if ( ! okToSubmit) {
+            e.preventDefault();
+
+        // Do something asynchronous to simulate an ajax call
+        var $form = $(this);
+        setTimeout(function () {
+            // Assuming everything checked out, submit the form
+            okToSubmit = true;
+            $form.submit();
+        }, 3000);
+    }
 });
 });
  $(document).ready(function(){
@@ -27,4 +41,7 @@ $('#btnSubmit').on('click',function(){
     $('#namaModal').text(nama);
     $('#alamatModal').text(alamat);
     $('#pekerjaanModal').text(pekerjaan);
-})
+    setTimeout(function(){
+        $('#exampleModalCenter').modal('hide')
+      }, 3000);
+});
