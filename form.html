@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form Exercise 4</title>	
+	<title>Form Exercise 4-Form</title>	
 	<script type="text/javascript" src="jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +22,7 @@
                   <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
             
-                <!----Wrapper for slides -->
+                <!--Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active">
                     <img src="babyBoss1.jpg" alt="Los Angeles" style="width:100%;">
@@ -58,11 +58,21 @@
                             <input class="form-control paddingForm" type="text" id="pekerjaan" placeholder="Masukkan pekerjaan .." name="pekerjaan" autocomplete="off">
                             <center>
                                 <button
-                                type="submit"
-                                class="btn btn-primary btn-lg paddingForm" 
-                                id="btnSubmit"
-                                data-toggle="modal" 
-                                data-target="#exampleModalCenter">Submit</button></center>
+                                  type="submit"
+                                  class="btn btn-primary btn-lg paddingForm" 
+                                  id="btnSubmit"
+                                  data-toggle="modal" 
+                                  data-target="#exampleModalCenter">Submit</button>
+                                <input
+                                  type="button"
+                                  class="btn btn-danger btn-lg paddingForm btnInfo"
+                                  data-toggle="tooltip"
+                                  title="Info cara pengisian form"
+                                  data-placement="bottom"
+                                  id="btnInfo" value="Info">
+                                </button>
+                                
+                            </center>
                     </form>
             </div>
         </div>

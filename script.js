@@ -21,6 +21,9 @@ $(document).ready(function(){
         }, 3000);
     }
 });
+setTimeout(function(){
+    $('#li2').html('<p>mas</p>');
+}),3000
 });
  $(document).ready(function(){
         $("#nama").keyup(function(){
@@ -33,6 +36,7 @@ $(document).ready(function(){
         $('#pekerjaan').keyup(function(){
             $('#btnSubmit').slideDown();
         });
+        
     });
 $('#btnSubmit').on('click',function(){
     var nama=$('#nama').val();
@@ -45,3 +49,15 @@ $('#btnSubmit').on('click',function(){
         $('#exampleModalCenter').modal('hide')
       }, 3000);
 });
+$('#btnInfo').on('click',function(){
+    window.location="info.html";
+});
+$('#btnBack').on('click',function(){
+    window.location="form.html";
+});
+
+
+
+
+
+
