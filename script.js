@@ -21,7 +21,7 @@ $(document).ready(function(){
         }, 3000);
     }
 });
-
+});
  $(document).ready(function(){
         $("#nama").keyup(function(){
             $("#alamat").slideDown();
