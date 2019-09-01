@@ -21,10 +21,7 @@ $(document).ready(function(){
         }, 3000);
     }
 });
-setTimeout(function(){
-    $('#li2').html('<p>mas</p>');
-}),3000
-});
+
  $(document).ready(function(){
         $("#nama").keyup(function(){
             $("#alamat").slideDown();
